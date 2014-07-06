@@ -184,13 +184,15 @@
 // Barometer
 //
 
-#ifndef CONFIG_BARO
- # define CONFIG_BARO AP_BARO_BMP085
-#endif
+//#ifndef CONFIG_BARO
+// # define CONFIG_BARO AP_BARO_BMP085
+//#endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Sonar
 //
+
+# define CONFIG_SONAR_SOURCE ENABLE 
 
 #ifndef CONFIG_SONAR_SOURCE
  # define CONFIG_SONAR_SOURCE SONAR_SOURCE_ADC
@@ -420,7 +422,7 @@
  # define FLIGHT_MODE_1                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_2)
- # define FLIGHT_MODE_2                  STABILIZE
+ # define FLIGHT_MODE_2                  ALT_HOLD
 #endif
 #if !defined(FLIGHT_MODE_3)
  # define FLIGHT_MODE_3                  STABILIZE
