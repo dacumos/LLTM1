@@ -183,14 +183,14 @@
 //////////////////////////////////////////////////////////////////////////////
 // Barometer
 //
-//#ifndef CONFIG_BARO
-// # define CONFIG_BARO AP_BARO_BMP085
-//#endif
+
+#ifndef CONFIG_BARO
+ # define CONFIG_BARO AP_BARO_BMP085
+#endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Sonar
 //
-#define CONFIG_SONAR_SOURCE ENABLED
 
 #ifndef CONFIG_SONAR_SOURCE
  # define CONFIG_SONAR_SOURCE SONAR_SOURCE_ADC
@@ -395,7 +395,7 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
-//  EPM cargo gripper
+//	EPM cargo gripper
 #ifndef EPM_ENABLED
  # define EPM_ENABLED DISABLED
 #endif
@@ -420,20 +420,21 @@
  # define FLIGHT_MODE_1                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_2)
- # define FLIGHT_MODE_2                  ALT_HOLD
+ # define FLIGHT_MODE_2                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_3)
- # define FLIGHT_MODE_3                  LAND_MODE
+ # define FLIGHT_MODE_3                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_4)
  # define FLIGHT_MODE_4                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_5)
- # define FLIGHT_MODE_5                  POSITION
+ # define FLIGHT_MODE_5                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_6)
- # define FLIGHT_MODE_6                  ACRO
+ # define FLIGHT_MODE_6                  STABILIZE
 #endif
+
 
 //////////////////////////////////////////////////////////////////////////////
 // Throttle Failsafe
@@ -518,7 +519,7 @@
 #endif
 
 #ifndef RTL_ALT
- # define RTL_ALT             1500    // default alt to return to home in cm, 0 = Maintain current altitude
+ # define RTL_ALT 				    1500    // default alt to return to home in cm, 0 = Maintain current altitude
 #endif
 
 #ifndef RTL_LOITER_TIME
@@ -561,62 +562,62 @@
 //
 
 #ifndef RATE_ROLL_P
- # define RATE_ROLL_P           0.150f
+ # define RATE_ROLL_P        		0.150f
 #endif
 #ifndef RATE_ROLL_I
- # define RATE_ROLL_I           0.100f
+ # define RATE_ROLL_I        		0.100f
 #endif
 #ifndef RATE_ROLL_D
- # define RATE_ROLL_D           0.004f
+ # define RATE_ROLL_D        		0.004f
 #endif
 #ifndef RATE_ROLL_IMAX
- # define RATE_ROLL_IMAX          500
+ # define RATE_ROLL_IMAX         	500
 #endif
 
 #ifndef RATE_PITCH_P
- # define RATE_PITCH_P          0.150f
+ # define RATE_PITCH_P       		0.150f
 #endif
 #ifndef RATE_PITCH_I
- # define RATE_PITCH_I          0.100f
+ # define RATE_PITCH_I       		0.100f
 #endif
 #ifndef RATE_PITCH_D
- # define RATE_PITCH_D          0.004f
+ # define RATE_PITCH_D       		0.004f
 #endif
 #ifndef RATE_PITCH_IMAX
- # define RATE_PITCH_IMAX         500
+ # define RATE_PITCH_IMAX        	500
 #endif
 
 #ifndef RATE_YAW_P
- # define RATE_YAW_P                0.200f
+ # define RATE_YAW_P              	0.200f
 #endif
 #ifndef RATE_YAW_I
- # define RATE_YAW_I                0.020f
+ # define RATE_YAW_I              	0.020f
 #endif
 #ifndef RATE_YAW_D
- # define RATE_YAW_D                0.000f
+ # define RATE_YAW_D              	0.000f
 #endif
 #ifndef RATE_YAW_IMAX
- # define RATE_YAW_IMAX             800
+ # define RATE_YAW_IMAX            	800
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Loiter position control gains
 //
 #ifndef LOITER_POS_P
- # define LOITER_POS_P              1.0f
+ # define LOITER_POS_P             	1.0f
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Loiter rate control gains
 //
 #ifndef LOITER_RATE_P
- # define LOITER_RATE_P           1.0f
+ # define LOITER_RATE_P          	1.0f
 #endif
 #ifndef LOITER_RATE_I
- # define LOITER_RATE_I           0.5f
+ # define LOITER_RATE_I          	0.5f
 #endif
 #ifndef LOITER_RATE_D
- # define LOITER_RATE_D           0.0f
+ # define LOITER_RATE_D          	0.0f
 #endif
 #ifndef LOITER_RATE_IMAX
  # define LOITER_RATE_IMAX          1000        // maximum acceleration from I term build-up in cm/s/s
