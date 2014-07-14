@@ -424,7 +424,7 @@
  # define FLIGHT_MODE_1                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_2)
- # define FLIGHT_MODE_2                  ALT_HOLD
+ # define FLIGHT_MODE_2                  STABILIZE
 #endif
 #if !defined(FLIGHT_MODE_3)
  # define FLIGHT_MODE_3                  STABILIZE
