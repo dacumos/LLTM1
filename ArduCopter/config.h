@@ -44,6 +44,8 @@
 #error CONFIG_APM_HARDWARE option is deprecated! use CONFIG_HAL_BOARD instead
 #endif
 
+#define CONFIG_HAL_BOARD HAL_BOARD_PX4
+
 #ifndef CONFIG_HAL_BOARD
 #error CONFIG_HAL_BOARD must be defined to build ArduCopter
 #endif
@@ -112,6 +114,8 @@
 //////////////////////////////////////////////////////////////////////////////
 // FRAME_CONFIG
 //
+#define FRAME_CONFIG OCTA_QUAD_FRAME
+
 #ifndef FRAME_CONFIG
  # define FRAME_CONFIG   QUAD_FRAME
 #endif
@@ -184,15 +188,13 @@
 // Barometer
 //
 
-//#ifndef CONFIG_BARO
-// # define CONFIG_BARO AP_BARO_BMP085
-//#endif
+#ifndef CONFIG_BARO
+ # define CONFIG_BARO AP_BARO_BMP085
+#endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Sonar
 //
-
-# define CONFIG_SONAR_SOURCE ENABLE 
 
 #ifndef CONFIG_SONAR_SOURCE
  # define CONFIG_SONAR_SOURCE SONAR_SOURCE_ADC
@@ -211,7 +213,7 @@
  # endif
 #elif CONFIG_SONAR_SOURCE == SONAR_SOURCE_ANALOG_PIN
  # ifndef CONFIG_SONAR_SOURCE_ANALOG_PIN
-  #  define CONFIG_SONAR_SOURCE_ANALOG_PIN 0
+  #  define CONFIG_SONAR_SOURCE_ANALOG_PIN 13
  # endif
 #else
  # warning Invalid value for CONFIG_SONAR_SOURCE, disabling sonar

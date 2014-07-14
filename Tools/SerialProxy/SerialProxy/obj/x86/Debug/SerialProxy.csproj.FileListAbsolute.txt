@@ -1,0 +1,9 @@
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\bin\Debug\SerialProxy.exe.config
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\bin\Debug\SerialProxy.exe
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\bin\Debug\SerialProxy.pdb
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\obj\x86\Debug\SerialProxy.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\obj\x86\Debug\SerialProxy.Form1.resources
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\obj\x86\Debug\SerialProxy.Properties.Resources.resources
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\obj\x86\Debug\SerialProxy.csproj.GenerateResource.Cache
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\obj\x86\Debug\SerialProxy.exe
+C:\Users\Christopher\Documents\GitHub\LLTM1\Tools\SerialProxy\SerialProxy\obj\x86\Debug\SerialProxy.pdb
