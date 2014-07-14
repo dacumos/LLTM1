@@ -73,7 +73,7 @@
  # define MAGNETOMETER ENABLED
 #elif CONFIG_HAL_BOARD == HAL_BOARD_PX4
  # define CONFIG_IMU_TYPE   CONFIG_IMU_PX4
- # define CONFIG_BARO       AP_BARO_PX4
+// # define CONFIG_BARO       AP_BARO_PX4
  # define CONFIG_SONAR_SOURCE SONAR_SOURCE_ANALOG_PIN
  # define MAGNETOMETER ENABLED
 #elif CONFIG_HAL_BOARD == HAL_BOARD_FLYMAPLE
@@ -184,9 +184,9 @@
 // Barometer
 //
 
-#ifndef CONFIG_BARO
- # define CONFIG_BARO AP_BARO_BMP085
-#endif
+//#ifndef CONFIG_BARO
+// # define CONFIG_BARO AP_BARO_BMP085
+//#endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Sonar

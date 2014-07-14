@@ -26,7 +26,7 @@
 #   define RC_FAST_SPEED 490
 
 // Barometer
-# define CONFIG_BARO       AP_BARO_PX4
+//# define CONFIG_BARO       AP_BARO_PX4
 
 // Sonar
 # define CONFIG_SONAR_SOURCE SONAR_SOURCE_ANALOG_PIN
